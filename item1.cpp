@@ -12,10 +12,12 @@ void f1(T* param) {
 }
 
 template<typename T>
-void f2(T&& param) {
-    
-}
+void f2(T& param) {
 
+}
+void someFunc(int a, double b) {
+
+}
 int main() {
 int x = 27;
 const int cx = x;
@@ -29,5 +31,5 @@ f(rx);
 
 int x1 = 27;
 
-f1(&x1);
+f(someFunc);
 }
