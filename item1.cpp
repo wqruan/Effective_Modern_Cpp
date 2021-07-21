@@ -4,9 +4,20 @@
 template<typename T>
 void f(T& param) { // param is a reference
     std::cout<< typeid(param).name()<<std::endl;
-    param = 2; 
 }
 
+template<typename T>
+void f1(T* param) {
+    *param = 2; 
+}
+
+template<typename T>
+void f2(T& param) {
+
+}
+void someFunc(int a, double b) {
+
+}
 int main() {
 int x = 27;
 const int cx = x;
@@ -17,4 +28,8 @@ const int& rx = x;
 f(x);
 f(cx);
 f(rx);
+
+int x1 = 27;
+
+f(someFunc);
 }
