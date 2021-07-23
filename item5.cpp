@@ -1,6 +1,7 @@
 #include <iostream>
 #include <map>
 #include <string>
+
 int main() {
     auto x2= 1;
     std::map<std::string, int> store;
