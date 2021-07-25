@@ -49,9 +49,10 @@ int main() {
 
     int i=0;
     int j= 5;
-    MatrixXd tmp7 = tmp6.middleRows(i,j);
+    MatrixXd tmp7;
+    tmp7.resize(3,4);
     tmp7.array()(1) = 10;
-    tmp7.row(0) = tmp6.row(3);
+
     tmp7.transposeInPlace();
     std::cout << tmp7.rows() << std::endl;
     std::cout << tmp7(2, 0) << std::endl;
