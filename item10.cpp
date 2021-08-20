@@ -5,6 +5,9 @@
 #include <vector>
 #include <string>
 #include <tuple>
+
+//Prefer scopred enums to unscopred enums
+
 enum  class Color {black, white, red};
 std::vector<std::size_t> primeFactors(std::size_t x) { }
 enum class Status: std::uint64_t { good = 0,

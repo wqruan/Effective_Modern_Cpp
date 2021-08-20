@@ -2,6 +2,8 @@
 #include <string>
 
 #include <boost/type_index.hpp>
+
+//Know how to view deduced type
 template<typename T>
 void f(const T& param)
 {

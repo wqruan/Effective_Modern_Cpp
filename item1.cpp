@@ -1,6 +1,9 @@
 #include <iostream>
 #include <typeinfo> 
 
+
+//Understand template type deduction
+
 template<typename T>
 void f(T& param) { // param is a reference
     std::cout<< typeid(param).name()<<std::endl;

@@ -6,6 +6,7 @@ using MuxGuard = std::lock_guard<std::mutex>;
 
 std::mutex f1m, f2m, f3m; // mutexes for f1, f2, and f3
 
+//Prefer nullptr to 0 and NULL
 
 int f1(std::shared_ptr<int> spw) {} // call these only when
 double f2(std::unique_ptr<int> upw) {} // the appropriate

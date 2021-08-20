@@ -4,6 +4,8 @@
 #include <memory>
 #include <string>
 
+//Prefer alias declarations to typedefs
+
 using UPtrMapSS = 
     std::unique_ptr<std::unordered_map<std::string, std::string>>;
 

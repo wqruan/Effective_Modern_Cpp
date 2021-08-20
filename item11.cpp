@@ -7,6 +7,8 @@
 #include <tuple>
 
 
+//Prefer deleted functions to private undefined ones
+
 bool isLucky(int number) {
     return number > 5;
 }

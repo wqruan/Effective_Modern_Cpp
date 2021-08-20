@@ -1,5 +1,9 @@
 #include <iostream>
 
+
+//Understand auto type deduction
+
+
 template<typename T>
 void f(T param) {
     printf("%d\n", param);

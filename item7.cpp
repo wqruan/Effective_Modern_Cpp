@@ -1,6 +1,9 @@
 #include <iostream>
 #include <atomic>
 #include<initializer_list>
+
+
+//Distinguish between () and {} when creating objects
 class item7
 {
 private:

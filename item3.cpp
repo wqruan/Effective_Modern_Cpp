@@ -2,6 +2,9 @@
 #include <iostream>
 #include <deque>
 #include <string>
+
+//Understand decltype
+
 template<typename Container, typename Index>
 decltype(auto) authAndAccess(Container&& c, Index i)  {
     return std::forward<Container>(c)[i];
