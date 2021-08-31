@@ -41,3 +41,5 @@ public:
         mutable std::atomic<bool> cacheValid{ false };
         mutable std::atomic<int> cachedValue;
 };
+
+int main() {}
