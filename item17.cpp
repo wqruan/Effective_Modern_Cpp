@@ -24,4 +24,4 @@ class Base {
 
         Base(const Base&) = default;
         Base& operator=(const Base&) = default;
-}
+};
