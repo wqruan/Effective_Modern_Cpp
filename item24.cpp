@@ -19,7 +19,7 @@ void f(const T&& param) {} // param is an universe reference
 
 int main() {
     std::vector<int> v;
-    f(v);
+    f(std::move(v));
     auto tmp = [](auto&& func, auto&& ... params) {
         
     };
